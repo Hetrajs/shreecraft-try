@@ -165,96 +165,6 @@ const Products = () => {
          duration: 2,
          ease: Power3.easeInOut
        })
-
-
-      // const tl = gsap.timeline();
-
-      // gsap.to(BGColor.current, {
-      //   scrollTrigger: {
-      //     trigger: BGColor.current,
-      //     start: "top 60%",
-      //     end: "top 20%",
-      //     scrub: 1,
-      //   },
-      //   backgroundColor: "#111111"
-      // });
-
-      // tl.fromTo(BIGText.current, {
-      //   fontSize: "90px",
-      // }, {
-      //   scrollTrigger: {
-      //     trigger: BIGText.current,
-      //     start: "top 50%",
-      //     end: "top 0%",
-      //     scrub: 1,
-      //     markers: true,
-      //   },
-      //   fontSize: "200px",
-      //   lineHeight: "150px",
-      //   duration: 3,
-      //   opacity: 0
-      // });
-
-      // // Photo's Animation
-      // tl.fromTo(LeftImage.current, {
-      //   x: "-50%",
-      //   opacity: 0
-      // }, {
-      //   scrollTrigger: {
-      //     trigger: "#photos",
-      //     start: "bottom 50%",
-      //     end: "top 30%",
-      //     scrub: 1,
-      //   },
-      //   x: "0%",
-      //   duration: 2,
-      //   opacity: 1
-      // }, 'a');
-
-      // tl.fromTo(TopImage.current, {
-      //   y: "-50%",
-      //   opacity: 0
-      // }, {
-      //   scrollTrigger: {
-      //     trigger: "#photos",
-      //     start: "top 50%",
-      //     end: "top 30%",
-      //     scrub: 1,
-      //   },
-      //   y: "0%",
-      //   duration: 2,
-      //   opacity: 1
-      // }, 'a');
-
-      // tl.fromTo(BottomImage.current, {
-      //   y: "50%",
-      //   opacity: 0
-      // }, {
-      //   scrollTrigger: {
-      //     trigger: "#photos",
-      //     start: "top 50%",
-      //     end: "top 30%",
-      //     scrub: 1,
-      //   },
-      //   y: "0%",
-      //   duration: 2,
-      //   opacity: 1
-      // }, 'a');
-
-      // tl.fromTo(RightImage.current, {
-      //   x: "50%",
-      //   opacity: 0
-      // }, {
-      //   scrollTrigger: {
-      //     trigger: "#photos",
-      //     start: "top 50%",
-      //     end: "top 30%",
-      //     scrub: 1,
-      //   },
-      //   x: "0%",
-      //   duration: 2,
-      //   opacity: 1
-      // }, 'a');
     });
 
 
@@ -272,6 +182,7 @@ const Products = () => {
             <div className="our_products">
               <h1 ref={BIGText} className="text-[#333333] top-[100px] -left-0 font-bold font-inter lg:leading-[170px] text-[90px] hidden lg:inline-block leading-[90px] tracking-tighter lg:text-[200px] absolute">Our <br /> Products </h1>
               <div id="photos" className="w-full relative z-[2] grid mx-auto justify-center items-center lg:grid-cols-2 gap-5">
+              <Link to="/products">
                 <div ref={LeftImage} className="opacity-0 w-full overflow-hidden space-y-2">
                   <img
                     className="max-w-[400px]  lg:max-w-[550px] rounded-[9px] xl:max-w-[595px] h-[200px] lg:min-h-[570px] xl:min-h-[725px] object-cover lg:object-[70%] w-full"
@@ -281,7 +192,9 @@ const Products = () => {
                     Radha - <span className="text-[#6B6B6B]">Krishna</span>
                   </h2>
                 </div>
+              </Link>
                 <div className="w-full flex flex-col justify-center items-center gap-5">
+                  <Link to="/products">
                   <div ref={TopImage} className="opacity-0 w-full space-y-2">
                     <img
                       className="max-w-[400px] lg:max-w-[650px]  w-full object-cover h-[200px] lg:h-[400px] rounded-[9px]"
@@ -291,7 +204,9 @@ const Products = () => {
                       Jai <span className="text-[#6B6B6B]">Ganesh</span>
                     </h2>
                   </div>
+                  </Link>
                   <div className=" w-full flex flex-col lg:flex-row items-center justify-center gap-5 xl:gap-10">
+                    <Link to="/products">
                     <div ref={BottomImage} className=" opacity-0 overflow-hidden w-full space-y-2">
                       <img
                         className="max-w-[400px] lg:max-w-[550px] rounded-[9px] h-[200px] lg:h-[270px] object-cover w-full"
@@ -301,6 +216,8 @@ const Products = () => {
                         Gautam <span className="text-[#6B6B6B]">Buddha</span>
                       </h2>
                     </div>
+                    </Link>
+                    <Link to="/products">
                     <div ref={RightImage} className=" opacity-0 w-full over-flow-hidden h-full space-y-2">
                       <img
                         className="max-w-[400px] lg:max-w-[550px] w-full rounded-[9px] object-cover lg:object-[0%] h-[200px] lg:h-[270px]"
@@ -310,6 +227,7 @@ const Products = () => {
                         Red-Blue <span className="text-[#6B6B6B]">Rangoli</span>
                       </h2>
                     </div>
+                    </Link>
                   </div>
                 </div>
               </div>

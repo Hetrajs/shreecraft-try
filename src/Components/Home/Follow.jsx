@@ -14,25 +14,25 @@ const Follow = () => {
                 </h2>
               </div>
               <div className="flex gap-6 items-center my-6 lg:my-16 lg:gap-10">
-                <a href="/">
+                <a href="https://wa.me/message/UKCGXKH7KKL6H1">
                   <img
                     className="max-w-[40px] lg:max-w-[60px]"
                     src="WhatsApp.svg"
                   />
                 </a>
-                <a href="/">
+                <a href="https://youtube.com/@shreecrafteria27?si=g8xeriHm7cdtn2D9">
                   <img
                     className="max-w-[40px] lg:max-w-[60px]"
                     src="YouTube.svg"
                   />
                 </a>
-                <a href="/">
+                <a href="https://www.instagram.com/shree.crafteria27?igsh=MWljMXFqbG1laWsyMQ%3D%3D&utm_source=qr">
                   <img
                     className="max-w-[40px] lg:max-w-[60px]"
                     src="Instagram.svg"
                   />
                 </a>
-                <a href="/">
+                <a href="https://www.facebook.com/profile.php?id=61560058480732&mibextid=LQQJ4d">
                   <img
                     className="max-w-[40px] lg:max-w-[60px]"
                     src="Facebook.svg"

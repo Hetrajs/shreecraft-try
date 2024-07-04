@@ -122,7 +122,7 @@ export default function NavbarTopBarPreview() {
             {/*      <!-- Actions --> */}
             <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
               <div className="lg:flex gap-4 items-center hidden">
-                <a className="bg-white px-5 py-2 rounded-full" href="/">
+                <a className="bg-white px-5 py-2 rounded-full" href="https://youtube.com/@shreecrafteria27?si=g8xeriHm7cdtn2D9">
                   Youtube
                 </a>
               </div>

@@ -1,6 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap, { Power2, ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Tdt = () => {
   const PCVideo =
@@ -226,16 +227,18 @@ const Tdt = () => {
               ref={socialLinks}
               className="social_links mt-10 hidden ml-5 lg:flex items-center gap-5"
             >
-              <img
-                className="size-[35px]"
-                src="https://dl.dropboxusercontent.com/scl/fi/hhscgdmm2ggugkd0wuyep/instagram-1.png?rlkey=dfwzcpozhek56uc751c8wexwi&st=sv5zqz2n&dl=0"
-                alt=""
-              />
+             <Link to="https://www.instagram.com/thedivinetruth27?igsh=djFza3dwYWN2ZmEy">
+          <img
+            className="size-[35px]"
+            src="https://dl.dropboxusercontent.com/scl/fi/hhscgdmm2ggugkd0wuyep/instagram-1.png?rlkey=dfwzcpozhek56uc751c8wexwi&st=sv5zqz2n&dl=0"  />
+            </Link>
+              <Link to="https://youtube.com/@thedivinetruth27?si=4uC9Kugg50-Mcifp">
               <img
                 className="size-[45px]"
                 src="https://dl.dropboxusercontent.com/scl/fi/u7lcr6qqwgrtgons9a3pi/youtube.png?rlkey=pjj75jfqm6phzifsi7bk0hlfi&st=mmvi42sz&dl=0"
                 alt=""
               />
+              </Link>
             </div>
           </div>
           <video
@@ -252,14 +255,18 @@ const Tdt = () => {
           ))}
         </p>
         <div ref={socialLink2} className="social_links lg:hidden mt-10 ml-5 flex items-center gap-5">
-          <img
-            className="size-[45px]"
-            src="https://dl.dropboxusercontent.com/scl/fi/u7lcr6qqwgrtgons9a3pi/youtube.png?rlkey=pjj75jfqm6phzifsi7bk0hlfi&st=mmvi42sz&dl=0"
-            alt=""
-          />
+            <Link to="https://www.instagram.com/thedivinetruth27?igsh=djFza3dwYWN2ZmEy">
           <img
             className="size-[35px]"
             src="https://dl.dropboxusercontent.com/scl/fi/hhscgdmm2ggugkd0wuyep/instagram-1.png?rlkey=dfwzcpozhek56uc751c8wexwi&st=sv5zqz2n&dl=0"  />
+            </Link>
+          <Link to="https://youtube.com/@thedivinetruth27?si=4uC9Kugg50-Mcifp">
+              <img
+                className="size-[45px]"
+                src="https://dl.dropboxusercontent.com/scl/fi/u7lcr6qqwgrtgons9a3pi/youtube.png?rlkey=pjj75jfqm6phzifsi7bk0hlfi&st=mmvi42sz&dl=0"
+                alt=""
+              />
+            </Link>
         </div>
         <div className="video-div relative">
           <video
